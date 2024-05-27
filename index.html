@@ -3,27 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--  dependency  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!--  css & js  -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        * {
+            outline: 1px solid red;
+        }
+
+        body {
+            font-family: Noto Sans, sans-serif !important;
+            --nav-item-hover-border: 1px solid #919191;
+        }
+
+        img {
+            display: block;
+        }
+
+        a, a:hover, a:visited, a:link, a:active {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .container {
+            position: relative;
+            max-width: 1920px;
+            height: 200vh;
+        }
+
+        :root {
+            --container-max-width: 1200px;
+        }
+    </style>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,400,0,0" />
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/hero.css">
     <script src="js/header.js"></script>
 </head>
 <body>
 <div class="container">
     <div class="header">
         <div class="header-wrapper">
-            <div class="logo">
-                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/logo.svg"
-                     alt="logo">
-            </div>
+            <div class="logo"><img src="./img/logo.svg" alt="logo"></div>
             <button class="btn active">
-        <span class="material-symbols-rounded menu active">
-          menu
-        </span>
+                <span class="material-symbols-rounded menu active">
+                  menu
+                </span>
                 <span class="material-symbols-rounded close">
-          close
-        </span>
+                  close
+                </span>
             </button>
             <div class="nav-modal">
                 <ul class="nav">
@@ -110,7 +143,48 @@
             </div>
         </div>
     </div>
-    <!--   <div class="modal" /> -->
+    <div class="hero">
+        <div class="hero-content">
+            <div class="wrapper">
+                <p class="title">Hi！我是 Noel</p>
+                <p>具有 10 年經驗的資深 UI 設計師兼前端工程師</p>
+                <p>技術雙修並行，熱衷於優化使用者的網頁體驗</p>
+                <p class="gray-text">WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN
+                <ul class="link">
+                    <li class="link-item">
+                        <a href="#">
+                            <img alt="instagram" src="./img/instagram.svg">
+                        </a>
+                    </li>
+                    <li class="link-item">
+                        <a href="#">
+                            <img alt="youtube" src="./img/facebook.svg">
+                        </a>
+                    </li>
+                    <li class="link-item">
+                        <a href="#">
+                            <img alt="youtube" src="./img/youtube.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="./img/hero-lg.png" alt="hero-lg">
+        </div>
+    </div>
+    <div class="works">
+        works
+    </div>
+    <div class="services">
+        services
+    </div>
+    <div class="articles">
+        articles
+    </div>
+    <div class="footer">
+        footer
+    </div>
 </div>
 </body>
 </html>
