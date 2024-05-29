@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 /* title start */
-.works .title{
+.works>.title{
     --dot-line-color: #C1C1C1;
     display: flex;
     flex-direction: row;
@@ -11,15 +11,15 @@
     align-items: center;
     margin: 120px auto 80px;
 }
-.works .title li{
+.works>.title li{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.works .title li:last-child{
+.works>.title li:last-child{
     text-align: end;
 }
-.works .title li:first-child::before, .works .title li:last-child::after{
+.works>.title li:first-child::before, .works .title li:last-child::after{
     content: '';
     display: block;
     width: 6px;
@@ -27,14 +27,14 @@
     background-color: var(--dot-line-color);
     border-radius: 50%;
 }
-.works .title li:first-child::after, .works .title li:last-child::before{
+.works>.title li:first-child::after, .works .title li:last-child::before{
     content: '';
     display: block;
     width: 94px;
     height: 1px;
     background-color: var(--dot-line-color);
 }
-.works .title li:nth-child(2){
+.works>.title li:nth-child(2){
     margin: 0 16px;
     font-size: 32px;
     font-weight: 600;
@@ -42,3 +42,73 @@
     letter-spacing: .12em;
 }
 /* title end */
+.works>.content{
+    display: flex;
+    flex-direction: column;
+}
+.works>.content>li{
+    height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.works>.content>li:nth-child(1) .work-bg-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+    z-index: -1;
+}
+.works>.content>li .introduce{
+    width: 526px;
+    margin: auto 0 auto 53px;
+    background: #FFFFFF1A;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 40px 56px 40px;
+    border-radius: 24px;
+}
+.works>.content>li .introduce .wrapper{
+    border-bottom: 1px solid #f1f1f1;
+}
+.works>.content>li .introduce .title{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33.6px;
+    margin-bottom: 8px;
+}
+.works>.content>li .introduce .subtitle{
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+.works>.content>li .introduce .tag-list{
+    display: flex;
+    color: #3B3B3B;
+    margin-bottom: 40px;
+}
+.works>.content>li .introduce .tag-list>.tag{
+    background-color: #ffffff;
+    border-radius: 16px;
+    line-height: 24px;
+    padding: 4px 12px 4px 12px;
+}
+.works>.content>li .introduce .tag-list>.tag:not(:last-child){
+    margin-right: 16px;
+}
+.works>.content>li .introduce button{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px 16px 32px;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #FFFFFF;
+}

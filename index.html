@@ -13,11 +13,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
         * {
-            outline: 1px solid red;
+            /*outline: 1px solid red;*/
         }
 
         body {
-            font-family: Noto Sans, sans-serif;
+            font-family: Noto Sans, serif;
             --nav-item-hover-border: 1px solid #919191;
         }
 
@@ -61,7 +61,7 @@
             </button>
             <div class="nav-modal">
                 <ul class="nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <div class="wrapper">
                             <a href="#">首頁</a>
                             <div class="hover-border">
@@ -180,8 +180,28 @@
             <li>作品介紹</li>
             <li></li>
         </ul>
-        <ul>
-            <li>星際旅行</li>
+        <ul class="content">
+            <li>
+                <img class="work-bg-img" src='img/homepage-work1-bg.png' alt="homepage-work1-bg.png">
+                <div><img class="work-img" src="img/homepage-work1.png" alt="work-image1.png"></div>
+                <div class="introduce">
+                    <div class="wrapper">
+                        <p class="title">星際旅行訂票平台</p>
+                        <p class="subtitle">悠遊宇宙的夢想，從這裡開始實現</p>
+                        <ul class="tag-list">
+                            <li class="tag">網頁設計</li>
+                            <li class="tag">響應式設計</li>
+                            <li class="tag">Bootstrap</li>
+                        </ul>
+                    </div>
+                    <button>
+                        完整介紹
+                        <span class="material-symbols-rounded arrow_forward">
+                          arrow_forward
+                        </span>
+                    </button>
+                </div>
+            </li>
             <li>理財APP</li>
             <li>粹究美學</li>
         </ul>
