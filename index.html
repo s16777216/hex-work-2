@@ -10,6 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!--  css & js  -->
+    <link rel="stylesheet" href="css/reset.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
         * {
@@ -17,7 +18,7 @@
         }
 
         body {
-            font-family: Noto Sans, serif;
+            font-family: 'Noto Sans', sans-serif;
             --nav-item-hover-border: 1px solid #919191;
         }
 
@@ -38,11 +39,24 @@
         :root {
             --container-max-width: 1200px;
         }
+        .title-with-svg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 1.2;
+            letter-spacing: .12em;
+            margin-bottom: 80px;
+            gap: 16px;
+        }
     </style>
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/works.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/articles.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="js/header.js"></script>
 </head>
 <body>
@@ -174,11 +188,11 @@
         </div>
     </div>
     <div class="works">
-        <ul class="title">
-            <li></li>
-            <li>作品介紹</li>
-            <li></li>
-        </ul>
+        <div class="title-with-svg">
+            <img src="./img/title-deco-left-lg.png" alt="title-deco-left-lg.png">
+            作品介紹
+            <img src="./img/title-deco-right-lg.png" alt="title-deco-right-lg.png">
+        </div>
         <ul class="content">
             <li>
                 <img class="work-bg-img" src='img/homepage-work1-bg.png' alt="homepage-work1-bg.png">
@@ -235,7 +249,7 @@
                         <ul class="tag-list">
                             <li class="tag">網頁設計</li>
                             <li class="tag">響應式設計</li>
-                            <li class="tag">WorkPress</li>
+                            <li class="tag">WordPress</li>
                         </ul>
                     </div>
                     <button>
@@ -249,13 +263,128 @@
         </ul>
     </div>
     <div class="services">
-        services
+        <img class="bg-img" src="./img/homepage-services-bg.png" alt="homepage-services-bg.png">
+        <div class="title-with-svg">
+            <img src="./img/title-deco-left-lg.png" alt="title-deco-left-lg.png">
+            服務項目
+            <img src="./img/title-deco-right-lg.png" alt="title-deco-right-lg.png">
+        </div>
+        <ul class="card-list">
+            <li class="card">
+                <div class="icon">
+                    <img src="./img/price-item-visual.svg" alt="price-item-visual.svg">
+                </div>
+                <p class="title">平面設計</p>
+            </li>
+            <li class="card">
+                <div class="icon">
+                    <img src="./img/price-item-ui.svg" alt="price-item-visual.svg">
+                </div>
+                <p class="title">UI設計</p>
+            </li>
+            <li class="card">
+                <div class="icon">
+                    <img src="./img/service-item-html&css.svg" alt="service-item-html&css.svg">
+                </div>
+                <p class="title">切版服務</p>
+            </li>
+            <li class="card">
+                <div class="icon">
+                    <img src="./img/service-item-front-end.svg" alt="service-item-front-end.svg">
+                </div>
+                <p class="title">前端開發</p>
+            </li>
+        </ul>
+        <p class="subtitle">想要合作或瞭解更多？</p>
+        <button>
+            詳情內容與合作流程
+            <span class="material-symbols-rounded arrow_forward">
+              arrow_forward
+            </span>
+        </button>
     </div>
     <div class="articles">
-        articles
+        <div class="title-with-svg">
+            <img src="./img/title-deco-left-lg.png" alt="title-deco-left-lg.png">
+            精選文章
+            <img src="./img/title-deco-right-lg.png" alt="title-deco-right-lg.png">
+        </div>
+        <div class="list">
+            <ul class="list-body">
+                <li>
+                    <img src="./img/article-image1.png" alt="article-image1.png">
+                    <div class="body-wrapper">
+                        <p class="title">Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</p>
+                        <div class="body">
+                            <span class="tag">UI/UX 新知</span>
+                            <span class="date">2024/02/10</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/article-image2.png" alt="article-image2.png">
+                    <div class="body-wrapper">
+                        <p class="title">給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)</p>
+                        <div class="body">
+                            <span class="tag">UI/UX 新知</span>
+                            <span class="date">2024/11/20</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/article-image3.png" alt="article-image3.png">
+                    <div class="body-wrapper">
+                        <p class="title">給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)</p>
+                        <div class="body">
+                            <span class="tag">UI/UX 新知</span>
+                            <span class="date">2023/10/18</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pagination">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
     </div>
     <div class="footer">
-        footer
+        <img class="bg-img" src="./img/footer-bg-lg.png" alt="footer-bg-lg.png">
+        <div class="footer-body">
+            <div class="contact">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo.svg">
+                </div>
+                <div>
+                    <p class="text">若有數位產品設計和開發相關問題</p>
+                    <p class="text">歡迎填寫表單，或直接與我聯絡！</p>
+                </div>
+                <p class="mail">service@hexschool.com</p>
+            </div>
+            <ul class="links">
+                <li>
+                    <a>
+                        <img src="./img/list.svg" alt="list.svg">
+                        填寫表單
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="./img/instagram.svg" alt="instagram.svg">
+                        hexschool_demo
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="./img/facebook.svg" alt="facebook.svg">
+                        hexschoolTW
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 </body>

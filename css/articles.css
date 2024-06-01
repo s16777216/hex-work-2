@@ -1,0 +1,61 @@
+.articles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 120px 0;
+}
+.articles .list-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+/* card start */
+.articles .list-body>li img{
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.articles .list-body>li .body-wrapper{
+    padding: 0 8px;
+}
+.articles .list-body>li .body-wrapper .title{
+    width: 400px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+.articles .list-body>li .body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.articles .list-body>li .body .tag{
+    padding: 4px 12px;
+    line-height: 24px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    background-color: #F1F1F1;
+}
+.articles .list-body>li .body .date{
+    line-height: 24px;
+}
+/* card end */
+.articles .list .pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 40px;
+}
+.articles .list .pagination>li{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #E9E9E9;
+}
+.articles .list .pagination>li.active{
+    background-color: #000000;
+}
