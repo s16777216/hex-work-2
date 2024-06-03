@@ -21,14 +21,15 @@
 }
 .hero .hero-content p {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.5;
     color: #5B5B5B;
 }
 .hero .hero-content .title{
     font-weight: 600;
     font-size: 40px;
-    line-height: 3;
+    line-height: 1.2;
     color: #3B3B3B;
+    margin-bottom: 24px;
 }
 .hero .hero-content .gray-text{
     font-weight: 400;
@@ -39,4 +40,46 @@
 .hero .hero-content .link{
     display: flex;
     margin-top: 60px;
+}
+.hero .hero-content .mark-text{
+    background-image: url(../img/mark.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 0 8px;
+}
+.hero .hero-content .line-break-sm{
+    display: flex;
+}
+.hero .hero-img .sm{
+    display: none;
+}
+@media (max-width: 768px){
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .hero .hero-img .lg{
+        display: none;
+    }
+    .hero .hero-img .sm{
+        display: block;
+    }
+    .hero .hero-content{
+        justify-content: center;
+        text-align: center;
+        width: auto;
+    }
+    .hero .hero-content .title{
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .hero .hero-content .wrapper{
+        margin-right: 0;
+    }
+    .hero .hero-content .link{
+        justify-content: center;
+        margin-top: 24px
+    }
+    .hero .hero-content .line-break-sm{
+        flex-direction: column;
+    }
 }
