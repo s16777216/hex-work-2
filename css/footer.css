@@ -65,3 +65,29 @@
     color: #FFFFFF;
     font-weight: 700;
 }
+@media (max-width: 768px) {
+    .footer{
+        overflow-x: hidden;
+        padding: 40px 0;
+    }
+    .footer .bg-img{
+        width: auto;
+        height: 100%;
+    }
+    .footer .footer-body{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 12px;
+        box-sizing: border-box;
+    }
+    .footer .contact{
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+        gap: 24px;
+    }
+    .footer .contact .logo>img{
+        margin: 0 auto;
+    }
+}
